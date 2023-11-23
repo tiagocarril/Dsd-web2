@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Despensa JOSE</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Acerca de nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="productos">
+        <div class="producto" data-nombre="CocaCola" data-precio="10">
+            <img class="imgproducto" src="img/cocacola.webp" alt="cocacola">
+            <p class="productosinfo">CocaCola</p>
+            <p>Precio: $10</p>
+            <button class="compracarrito" onclick="agregarAlCarrito(this)">Agregar al carrito</button>
+        </div>
+        <div class="producto" data-nombre="Pepsi" data-precio="200">
+            <img class="imgproducto2" src="img/pepsi.webp" alt="fideos">
+            <p class="productosinfo">Pepsi </p>
+            <p>Precio: $200</p>
+            <button class="compracarrito" onclick="agregarAlCarrito(this)">Agregar al carrito</button>
+        </div>
+        <div class="producto" data-nombre="Sprite" data-precio="180">
+            <img class="imgproducto3" src="img/sprite.webp" alt="sprite">
+            <p class="productosinfo">Sprite</p>
+            <p>Precio: $180</p>
+            <button class="compracarrito" onclick="agregarAlCarrito(this)">Agregar al carrito</button>
+        </div>
+        <div class="producto" data-nombre="Arroz" data-precio="90">
+            <img class="imgproducto4" src="img/arroz.webp" alt="arroz">
+            <p class="productosinfo">Arroz blanco</p>
+            <p>Precio: $90</p>
+            <button class="compracarrito" onclick="agregarAlCarrito(this)">Agregar al carrito</button>
+        </div>
+        <div class="producto" data-nombre="Pan Rallado" data-precio="70">
+            <img class="imgproducto5" src="img/pan-rallado.webp" alt="panrallado">
+            <p class="productosinfo">Pan rallado</p>
+            <p>Precio: $70</p>
+            <button class="compracarrito" onclick="agregarAlCarrito(this)">Agregar al carrito</button>
+        </div>
+        <div class="producto" data-nombre="Medallones de pollo" data-precio="100">
+            <img class="imgproducto6" src="img/medallones-rebozados-web.webp" alt="medallon">
+            <p class="productosinfo">Medallones de pollo</p>
+            <p>Precio: $100</p>
+            <button class="compracarrito" onclick="agregarAlCarrito(this)">Agregar al carrito</button>
+        </div>
+        <div class="producto" data-nombre="Pan Lactal" data-precio="420">
+            <img class="imgproducto7" src="img/pan-lactal.webp" alt="panlactal">
+            <p class="productosinfo">Pan Lactal</p>
+            <p>Precio: $420</p>
+            <button class="compracarrito" onclick="agregarAlCarrito(this)">Agregar al carrito</button>
+        </div>
+        <div class="producto" data-nombre="Aceite" data-precio="130">
+            <img class="imgproducto8" src="img/aceite.webp" alt="aceite">
+            <p class="productosinfo">Aceite</p>
+            <p>Precio: $130</p>
+            <button class="compracarrito" onclick="agregarAlCarrito(this)">Agregar al carrito</button>
+        </div>
+        <div class="producto" data-nombre="Gomitas" data-precio="5">
+            <img class="imgproducto9" src="img/gomitas.webp" alt="gomitas">
+            <p class="productosinfo">Gomitas</p>
+            <p>Precio: $5</p>
+            <button class="compracarrito" onclick="agregarAlCarrito(this)">Agregar al carrito</button>
+        </div>
+        <div class="producto" data-nombre="Lavandina" data-precio="89.99">
+            <img class="imgproducto10" src="img/lavandina.webp" alt="lavandina">
+            <p class="productosinfo">Lavandina</p>
+            <p>Precio: $89,99</p>
+            <button class="compracarrito" onclick="agregarAlCarrito(this)">Agregar al carrito</button>
+        </div>
+        <div class="producto" data-nombre="Limpia Pisos" data-precio="500">
+            <img class="imgproducto11" src="img/limpiapisos.webp" alt="limpiapisos">
+            <p class="productosinfo">Limpiapisos</p>
+            <p>Precio: $500</p>
+            <button class="compracarrito" onclick="agregarAlCarrito(this)">Agregar al carrito</button>
+        </div>
+        <div class="producto" data-nombre="Detergente en polvo" data-precio="340">
+            <img class="imgproducto12" src="img/detergenteenpolvo.webp" alt="jabonpolvo">
+            <p class="productosinfo">Jabon en polvo</p>
+            <p>Precio: $340</p>
+            <button class="compracarrito" onclick="agregarAlCarrito(this)">Agregar al carrito</button>
+
+    </div>
+
+    <div id="carrito">
+        <p class="botonvaciar">Carrito de Compras</p>
+        <ul id="lista-carrito"></ul>
+        <p class="botonvaciar">Total: $<span id="total">0</span></p>
+        <button class="vaciarcarritoo" onclick="vaciarCarrito()">Vaciar Carrito</button>
+    </div>
+
+
+     <script src="js/main.js"></script>
+</body>
+</html>
